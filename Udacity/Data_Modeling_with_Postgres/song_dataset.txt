@@ -1,0 +1,50 @@
+The first dataset is a subset of real data from the Million Song Dataset. 
+Each file is in JSON format and contains metadata about a song and the artist of that song. 
+The files are partitioned by the first three letters of each song's track ID. 
+For example, here are file paths to two files in this dataset.
+    song_data/A/B/C/TRABCEI128F424C983.json
+    song_data/A/A/B/TRAABJL12903CDCF1A.json
+
+And below is an example of what a single song file, TRAABJL12903CDCF1A.json, looks like.
+{"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}
+
+
+The Million Song Dataset is a freely-available collection of audio features and metadata for a million contemporary popular music tracks.
+
+Its purposes are:
+
+To encourage research on algorithms that scale to commercial sizes
+To provide a reference dataset for evaluating research
+As a shortcut alternative to creating a large dataset with APIs (e.g. The Echo Nest's)
+To help new researchers get started in the MIR field
+The core of the dataset is the feature analysis and metadata for one million songs, provided by The Echo Nest. The dataset does not include any audio, only the derived features. Note, however, that sample audio can be fetched from services like 7digital, using code we provide.
+
+The Million Song Dataset is also a cluster of complementary datasets contributed by the community:
+
+SecondHandSongs dataset -> cover songs
+musiXmatch dataset -> lyrics
+Last.fm dataset -> song-level tags and similarity
+Taste Profile subset -> user data
+thisismyjam-to-MSD mapping -> more user data
+tagtraum genre annotations -> genre labels
+Top MAGD dataset -> more genre labels
+
+The Million Song Dataset started as a collaborative project between The Echo Nest and LabROSA. It was supported in part by the NSF.
+
+How to get started
+To get a sense of the dataset, you can look at this description of one of the million songs.
+
+To start your own experiments, you can download the entire dataset (280 GB). We also provide a subset of 10,000 songs (1%, 1.8 GB compressed) for a quick taste.
+
+While waiting for the download, take a look at the FAQ, which includes a list of all the fields in the database.
+
+We also have a set of suggested tasks, including snippets of code to get you started.
+
+Please contact us if you have any questions about the dataset and how to use it. You can also try browsing and posting on our forum (registration required).
+
+Using the dataset?
+Please cite the following paper [pdf] [bib]:
+
+Thierry Bertin-Mahieux, Daniel P.W. Ellis, Brian Whitman, and Paul Lamere. 
+The Million Song Dataset. In Proceedings of the 12th International Society
+for Music Information Retrieval Conference (ISMIR 2011), 2011.
